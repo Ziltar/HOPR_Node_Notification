@@ -1,3 +1,4 @@
 NODES = []
 TELEGRAM_TOKEN = ""
 TELEGRAM_ID = ""
+ON_CHANGE = False
