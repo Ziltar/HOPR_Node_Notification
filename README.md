@@ -1,7 +1,7 @@
 # HOPR Node Notification
 Simple script to get the status of a node via Telegram. 
 
-## Telegram bot Faucet for Gnosis Chain
+## Telegram bot Node Notification
 
 This bot checks the availability of the node (or multiple nodes) every hour and sends a notification about the status of the node(s). A notification can be sent always or only when the availability changes. 
 
