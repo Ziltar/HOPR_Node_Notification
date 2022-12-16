@@ -1,0 +1,3 @@
+NODES = []
+TELEGRAM_TOKEN = ""
+TELEGRAM_ID = ""
