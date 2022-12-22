@@ -16,15 +16,15 @@ while True:
                         if stats[node["peerId"]] != node["availability24h"]:
                             change = True
                     else:
-                        stats[node["peerId"]] =  node["availability24h"]
                         change = True
+                    stats[node["peerId"]] =  node["availability24h"]    
 
                 msg += "Node: " + node["peerId"] + "\nAvailability: " + str(node["availability"]*100) + "\nAvailability 24h: " + str(node["availability24h"]*100) + "%\nLatency:" + str(node["latencyAverage"]) + "\nLastSeen:" + node["lastSeen"] + "\n\n"
-        
+        print(change)
         if (not ON_CHANGE) or (ON_CHANGE and change):
             url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage?chat_id={TELEGRAM_ID}&parse_mode=HTML&text=<code>{msg}</code>"
             requests.get(url)
     except:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage?chat_id={TELEGRAM_ID}&parse_mode=HTML&text=<code>Something went wrong!</code>"
         requests.get(url)        
-    time.sleep(1800)
+    time.sleep(10)
