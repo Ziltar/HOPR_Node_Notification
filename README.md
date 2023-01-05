@@ -7,7 +7,7 @@ This bot checks the availability of the node (or multiple nodes) every hour and 
 
 ## Installation
 
-1. Clone the repository : <br> `https://github.com/Ziltar/HOPR_Node_Notification.git && cd HOPR_Node_Notification` 
+1. Clone the repository : <br> `git clone https://github.com/Ziltar/HOPR_Node_Notification.git && cd HOPR_Node_Notification` 
 2. Install requirements:  <br> `pip install requirements.txt `
 3. Edit the *settings.py* File: <br>
 <b>NODES:</b> HOPR Node Address(es)<br>
