@@ -20,7 +20,7 @@ You can use a bot to find out your ID: https://t.me/userinfobot<br>
 *Example:*<br> `TELEGRAM_ID  =  "15915301634711"`<br>
 <b>ON_CHANGE</b><br>
 If True, the bot sends a notification only when the availability changes (24 hours). If False, a notification is sent every hour.<br>
-*Example:* <br>`ON_CHANGE  =  True`
+*Example:* <br>`ON_CHANGE  =  True`<br>
 <b>ON_REWARD_CHANGE</b><br>
 If True, the bot sends a notification when reward changes.<br>
 *Example:* <br>`ON_REWARD_CHANGE  =  True`<br>
