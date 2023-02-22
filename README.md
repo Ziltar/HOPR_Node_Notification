@@ -23,7 +23,7 @@ If True, the bot sends a notification only when the availability changes (24 hou
 *Example:* <br>`ON_CHANGE  =  True`
 <b>ON_REWARD_CHANGE</b><br>
 If True, the bot sends a notification when reward changes.<br>
-*Example:* <br>`ON_REWARD_CHANGE  =  True`
+*Example:* <br>`ON_REWARD_CHANGE  =  True`<br>
 <b>STAKE_WALLETS:</b> For reward status:<br>
 *Example:*<br> `STAKE_WALLETS = ["0x0000000000000000000000000000000000000000", "0x0000000000000000000000000000000000000001"]`<br>
 ## Usage
