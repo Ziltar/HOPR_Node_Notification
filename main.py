@@ -12,7 +12,7 @@ while True:
         response = requests.request("GET", URL)
         msg = ""
         change = False
-        for node in response.json():
+        for node in response.json()['nodes']:
             if node["peerId"] in NODES:
                 if ON_CHANGE:
                     if node["peerId"] in stats:
@@ -26,7 +26,7 @@ while True:
         total_reward = 0
         for address in STAKE_WALLETS:
             response = requests.request("GET", REWARD_URL+address)
-            total_reward += (response.json()[0]['rewards'])
+            total_reward += (response.json()[0][0]['rewards'])
       
         msg+= "\n💸Reward:" + str(total_reward) + " HOPR"
         if (not ON_CHANGE) or (ON_CHANGE and change):
